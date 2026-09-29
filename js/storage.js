@@ -1,10 +1,10 @@
-function salvarCadastro(cadastro) {
+export function salvarCadastro(cadastro) {
 
     localStorage.setItem("cadastro", JSON.stringify(cadastro));
 
 }
 
-function buscarCadastro() {
+export function buscarCadastro() {
 
     const cadastroSalvo = localStorage.getItem("cadastro");
 
