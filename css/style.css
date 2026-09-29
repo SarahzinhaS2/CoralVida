@@ -19,6 +19,11 @@
     --cor-sucesso: #2E7D32;
     --cor-erro: #C62828;
 
+    /* Cores de alto contraste */
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #FFFFFF;
+    --alto-contraste-destaque: #FFFF00;
+
 
     /* Tipografia */
 
@@ -458,4 +463,36 @@ main > form {
         width: 100%;
     }
 
+}
+
+/* Modo de alto contraste */
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste section,
+.alto-contraste input,
+.alto-contraste .modal-conteudo {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+    border-color: var(--alto-contraste-texto);
+}
+
+.alto-contraste p,
+.alto-contraste section h2,
+.alto-contraste section h3,
+.alto-contraste legend {
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste a,
+.alto-contraste button {
+    color: var(--alto-contraste-fundo);
+    background-color: var(--alto-contraste-destaque);
+}
+
+.alto-contraste a:focus,
+.alto-contraste button:focus {
+    outline-color: var(--alto-contraste-destaque);
 }
