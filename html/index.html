@@ -52,7 +52,15 @@
         <section>
             <h2>Sobre a CoralVida</h2>
 
-            <img src="../imagens/corais.jpg" alt="Recifes de corais no oceano">
+            <picture>
+                <source
+                    type="image/webp"
+                    srcset="../imagens/corais-400.webp 400w,
+                            ../imagens/corais-800.webp 800w,
+                            ../imagens/corais.webp 1200w"
+                    sizes="(max-width: 700px) 90vw, 700px">
+                <img src="../imagens/corais.jpg" alt="Recifes de corais no oceano">
+            </picture>
 
             <p>
                 A CoralVida é uma ONG que trabalha para proteger os recifes de corais
@@ -99,9 +107,6 @@
         }
     </script>
 
-    <script src="../js/storage.js"></script>
-    <script src="../js/formulario.js"></script>
-    <script src="../js/app.js"></script>
 
 </body>
 </html>
