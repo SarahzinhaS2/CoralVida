@@ -14,7 +14,13 @@
         <h1>CoralVida</h1>
 
         <nav>
-            <button class="menu-hamburguer" onclick="abrirMenu()">☰</button>
+            <button
+                class="menu-hamburguer"
+                onclick="abrirMenu()"
+                aria-label="Abrir menu"
+                aria-expanded="false">
+                ☰
+            </button>
 
             <div class="menu-links">
                 <a href="index.html">Início</a>
@@ -112,7 +118,15 @@
 
     <script>
         function abrirMenu() {
-            document.querySelector(".menu-links").classList.toggle("aberto");
+            const menu = document.querySelector(".menu-links");
+            const botao = document.querySelector(".menu-hamburguer");
+
+            menu.classList.toggle("aberto");
+
+            const aberto = menu.classList.contains("aberto");
+
+            botao.setAttribute("aria-expanded", aberto);
+            botao.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
         }
     </script>
 
