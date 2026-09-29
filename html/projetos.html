@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - CoralVida</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CoralVida</h1>
+
+        <nav>
+            <button class="menu-hamburguer" onclick="abrirMenu()">☰</button>
+
+            <div class="menu-links">
+                <a href="index.html">Início</a>
+
+                <div class="dropdown">
+                    <a href="projetos.html">Projetos</a>
+
+                    <div class="dropdown-conteudo">
+                        <a href="projetos.html#recifes">Proteção dos recifes</a>
+                        <a href="projetos.html#limpeza">Limpeza dos oceanos</a>
+                    </div>
+                </div>
+
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Nossos projetos</h2>
+
+            <p>
+                A CoralVida desenvolve projetos para proteger os recifes de corais
+                e ajudar na preservação dos oceanos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Projetos de preservação</h2>
+
+            <article>
+                <h3 id="recifes">Proteção dos recifes</h3>
+
+                <span class="badge">Preservação</span>
+
+                <p>
+                    O projeto busca ajudar na proteção dos recifes de corais
+                    e na recuperação de áreas afetadas.
+                </p>
+            </article>
+
+            <article>
+                <h3 id="limpeza">Limpeza dos oceanos</h3>
+
+                <span class="badge">Preservação</span>
+
+                <p>
+                    São realizadas ações para retirar resíduos do oceano
+                    e conscientizar as pessoas sobre a importância de manter
+                    os mares limpos.
+                </p>
+            </article>
+        </section>
+
+        <div class="alerta">
+            <strong>Participe!</strong>
+            As ações de voluntariado estão abertas para novos participantes.
+        </div>
+
+        <section>
+            <h2>Voluntariado</h2>
+
+            <p>
+                Quem quiser ajudar pode participar das ações de voluntariado,
+                contribuindo com atividades de preservação e conscientização.
+            </p>
+        </section>
+
+        <section>
+            <h2>Doações</h2>
+
+            <p>
+                As doações ajudam a CoralVida a manter seus projetos e continuar
+                trabalhando na proteção dos recifes de corais e dos oceanos.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CoralVida - Preservando os oceanos e os recifes de corais.</p>
+    </footer>
+
+    <div class="modal">
+        <div class="modal-conteudo">
+            <h2>Doações</h2>
+            <p>
+                As doações ajudam a CoralVida a manter seus projetos de preservação.
+            </p>
+            <button type="button" onclick="document.querySelector('.modal').style.display='none'">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        function abrirMenu() {
+            document.querySelector(".menu-links").classList.toggle("aberto");
+        }
+    </script>
+
+</body>
+
+</html>
