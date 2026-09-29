@@ -226,6 +226,12 @@ button:hover {
     background-color: var(--cor-primaria-escura);
 }
 
+button:focus,
+a:focus {
+    outline: 3px solid #00aaff;
+    outline-offset: 2px;
+}
+
 
 /* Rodapé */
 
