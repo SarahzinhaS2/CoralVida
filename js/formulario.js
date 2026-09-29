@@ -1,4 +1,6 @@
-document.addEventListener("submit", function(event) {
+import { salvarCadastro } from "./storage.js";
+
+document.addEventListener("submit", function (event) {
 
     event.preventDefault();
 

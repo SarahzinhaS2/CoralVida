@@ -23,6 +23,14 @@
                 ☰
             </button>
 
+            <button
+                type="button"
+                onclick="alternarAltoContraste()"
+                aria-pressed="false">
+                Alto contraste
+            </button>
+
+
             <div class="menu-links" id="menu-links">
                 <a href="index.html">Início</a>
 
@@ -131,6 +139,16 @@
         }
     </script>
 
+    <script>
+        function alternarAltoContraste() {
+            document.body.classList.toggle("alto-contraste");
+
+            const botao = document.querySelector('[aria-pressed]');
+            const ativado = document.body.classList.contains("alto-contraste");
+
+            botao.setAttribute("aria-pressed", ativado);
+        }
+    </script>
 </body>
 
 </html>
